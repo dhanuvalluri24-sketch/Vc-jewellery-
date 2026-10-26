@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Jewellerys</title>
+<style>
+body { font-family: Arial; margin: 0; background: #fff8f0; color: #44251b; text-align: center; }
+header { background: #800020; color: white; padding: 25px 10px; }
+h1 { margin: 0; }
+.products { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+.item { background: white; border-radius: 10px; padding: 15px; width: 135px; box-shadow: 0 2px 8px #ddd; }
+.item img { width: 100%; height: 120px; object-fit: contain; }
+button { background: #800020; color: white; border: 0; padding: 10px; border-radius: 6px; }
+footer { padding: 20px; background: #800020; color: white; }
+</style>
+</head>
+<body>
+<header>
+<h1>CV Jewellerys</h1>
+<p>Beautiful Jewellery for Every Occasion</p>
+</header>
+<h2>Our Jewellery Collection</h2>
+<div class="products">
+<div class="item">
+<img src="https://placehold.co/200x200?text=Necklace" alt="Necklace">
+<h3>Necklace</h3>
+<p>Price: DM us</p>
+<button onclick="order('Necklace')">Order on WhatsApp</button>
+</div>
+<div class="item">
+<img src="https://placehold.co/200x200?text=Earrings" alt="Earrings">
+<h3>Earrings</h3>
+<p>Price: DM us</p>
+<button onclick="order('Earrings')">Order on WhatsApp</button>
+</div>
+</div>
+<footer>
+<p>To order, contact CV Jewellerys</p>
+<p>Follow us on Instagram</p>
+</footer>
+<script>
+function order(product) {
+window.open('https://wa.me/?text='+encodeURIComponent('Hi CV Jewellerys, I want to order '+product));
+}
+</script>
+</body>
+</html>
